@@ -1,0 +1,591 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.business-name {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-right: 10px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+}
+
+.navbar a {
+    display: block;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    margin: 0 5px;
+	color: #FFFFFF;
+}
+
+/* Product Container Styles */
+.product-container {
+    background-color: #ffffff; /* Set your desired background color */
+    padding: 20px 20px 10px; /* Adjust the bottom padding to make it shorter */
+    border-radius: 0px;
+    margin-top: 50px; /* Add margin to create space between navbar and product container */
+    text-align: center; /* Center the text within the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.product-container h2 {
+    margin-bottom: 20px; /* Add margin to separate the title from the content */
+    color: #000000;
+    font-size: 50px;
+}
+
+/* Featured Container Styles */
+.featured-container {
+    background-color: #101010; /* Set your desired background color */
+    padding: 20px;
+    border-radius: 0px;
+    margin-top: 0px; /* Adjust margin to stick to the bottom of product container */
+    margin-bottom: 30px; /* Adjust margin at the bottom to extend the container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* First Column Styles */
+.featured-container .column1 {
+    max-width: 500px; /* Set the maximum width of the first column */
+    margin-right: 20px; /* Add margin to create space between image and text */
+}
+
+/* Image Styles */
+.featured-container .column1 img {
+    max-width: 100%; /* Image will fit within the width of the column */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+/* Second Column Styles */
+.featured-container .column2 {
+    max-width: 700px; /* Set maximum width for the second column */
+    font-family: 'Raleway', sans-serif; /* Use the Raleway font for the text */
+}
+
+/* Text Styles */
+.featured-container .column2 h3 {
+    font-size: 60px; /* Set the font size for the heading */
+    color: #ffffff; /* Set the text color */
+    margin-top: 20px; /* Adjust margin for spacing */
+}
+
+.featured-container .column2 p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF; /* Set the text color */
+    margin-top: -10px; /* Adjust margin for spacing */
+    text-align: justify;
+}
+
+/* Order Now Button Styles */
+.order-now-button {
+    margin-top: 20px; /* Adjust margin for spacing */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.order-now-button:hover {
+    background-color: #dcdcdc;
+}
+
+/* Rest Container Styles */
+.rest-container {
+    background-color: #f7f7f7; /* Set your desired background color */
+    padding: 10px; /* Adjust padding for a smaller container */
+    margin: 10px auto; /* Center the container horizontally */
+    border-radius: 10px;
+    max-width: 70%; /* Set a maximum width for the container */
+    max-height: 100%; /* Set a maximum height for the container */
+    overflow: auto; /* Add overflow property to handle content scrolling if needed */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+/* Grid Styles */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 50px; /* Adjust gap for a smaller container */
+}
+
+/* Product Item Styles */
+.product-item {
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add relative positioning */
+}
+
+.product-item img {
+    width: 100%; /* Set the image width to 100% of its container */
+    height: auto; /* Allow the image to maintain its aspect ratio */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-name {
+    margin-top: 5px; /* Adjust margin for a smaller container */
+    font-weight: 700;
+    font-size: 24px;
+    color:#101010
+}
+
+.product-subtext {
+    margin-top: 3px; /* Adjust margin for a smaller container */
+    color: #777;
+}
+
+.product-price {
+    margin-top: 3px; /* Adjust margin for a smaller container */
+    font-weight: bold;
+    color: #101010;
+}
+
+.add-button {
+    margin-top: 10px; /* Add some space above the button */
+    margin-bottom: 20px; /* Add space below the button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #101010;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #505050;
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.lightbox-content {
+    position: relative;
+    text-align: center;
+}
+
+#lightbox-img {
+    max-width: 80%;
+    max-height: 80vh;
+    border-radius: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif; /* Change to Raleway font */
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    width: 100%;
+    margin-bottom: 20px; /* Add margin-bottom to create space */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.faq-container {
+    max-width: 100%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-item {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 15px;
+    background-color: #101010;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.question {
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.faq-item.open {
+    background-color: #404040;
+}
+
+.faq-item.open .answer {
+    max-height: 100px;
+}
+
+.faq-container h1 {
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-size: 50px;
+}
+
+
+/* Logo Column */
+/* About Section */
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-inner-container {
+    display: flex;
+    max-width: 800px;
+}
+
+/* Logo Column Styles */
+.logo-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-logo {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* About Text Column Styles */
+.text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.about-heading {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFC0CB;
+}
+
+.about-subtext {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button-container {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cc8383;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #a05f5f;
+}
+
+
+/* About Text Column Styles */
+.text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 400px; /* Set a maximum width for the text column */
+}
+
+.about-heading {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFC0CB;
+}
+
+.about-subtext {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 500; /* Set font weight to 300 */
+    font-family: 'Raleway', sans-serif; /* Use Raleway font */
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cc8383;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #a05f5f;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px; /* Adjusted top margin for smaller screens */
+        margin-bottom: 10px; /* Adjusted bottom margin for smaller screens */
+    }
+
+    .about-inner-container {
+        flex-direction: column;
+    }
+
+    .logo-column, .text-column {
+        flex: 1;
+        margin-bottom: 10px;
+    }
+
+    .big-logo {
+        width: 100%;
+        max-width: none;
+    }
+
+    .button-container {
+        margin-top: 0;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Footer Section */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #101010;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.column {
+    flex: 1;
+    max-width: 300px;
+}
+
+.larger-column {
+    flex: 2;
+}
+
+.column h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.column-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.sub-column {
+    margin-top: 15px;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column, .larger-column {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer Copyright Styles */
+.end-container {
+    background-color: #834d58;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it a circle */
+    margin: 0 10px; /* Adjust spacing between icons */
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column, .larger-column {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer Copyright Styles */
+.end-container {
+    background-color: #272727;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}

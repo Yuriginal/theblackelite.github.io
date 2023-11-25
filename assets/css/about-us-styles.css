@@ -1,0 +1,387 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif; /* Change to Raleway font */
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    width: 100%;
+    margin-bottom: 20px; /* Add margin-bottom to create space */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.business-name {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-right: 10px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+}
+
+.navbar a {
+    display: block;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    margin: 0 5px;
+	color: #FFFFFF;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .navbar a {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+/* About Container Styles */
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%; /* You can set a specific max-width if needed */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent content from overflowing */
+    background-color: #101010;
+    
+}
+
+.about-inner-container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%; /* Make sure it doesn't exceed the window */
+    background-color: #101010;
+}
+
+.text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%; /* Make sure it doesn't exceed the window */
+}
+
+.text-column1 {
+    flex: 1; /* Adjust the width for the first column */
+    margin-top: 10px;
+}
+
+.text-column2 {
+    flex: 2; /* Adjust the width for the second column */
+}
+
+.about-heading {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.about-text {
+    font-size: 14px;
+    margin-bottom: -62px;
+    margin-top: 65px;
+    text-align: justify;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+}
+
+.about-subtext {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+	color: #ffffff;
+}
+
+.image-container {
+    max-width: 100%; /* Adjust the max-width as needed */
+    width: 100%; /* Make sure it doesn't exceed the window */
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden; /* Prevent content from overflowing */
+    background-color: #ffffff; /* Optional: Set background color */
+    margin-top: -20px; /* Adjust the margin to seamlessly connect with the about-container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 62%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure the image does not exceed the container height */
+    border-radius: 15px;
+	border: 5px solid #101010;
+}
+
+/*QUOTE*/
+.quote-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #101010;
+    max-height: ;
+}
+
+.quote-inner-container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    background-color: #101010;
+}
+
+.quote-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+}
+
+.quote-heading {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0; /* Reset margin for precise centering */
+    color: #ffffff;
+    
+    /* Centering using Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Set height to ensure vertical centering */
+}
+
+.quote-content {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.quote-image {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-header-container {
+    margin-bottom: 20px;
+}
+
+.team-header {
+    font-size: 60px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    color: #101010;
+}
+
+.team-members-container {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-image {
+    max-width: 90%; /* Make images responsive */
+    height: auto;
+    border-radius: 15px; /* Optional: Add a border-radius for a circular effect */
+}
+
+.team-name {
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #101010;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.column {
+    flex: 1;
+    max-width: 300px;
+}
+
+.larger-column {
+    flex: 2;
+}
+
+.column h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.column-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.sub-column {
+    margin-top: 15px;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column, .larger-column {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer Copyright Styles */
+.end-container {
+    background-color: #834d58;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it a circle */
+    margin: 0 10px; /* Adjust spacing between icons */
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column, .larger-column {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer Copyright Styles */
+.end-container {
+    background-color: #272727;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}
